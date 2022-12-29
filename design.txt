@@ -1,0 +1,32 @@
+---- Overview: ----
+
+Puzzle Slider Game is a combination puzzle where a player slide pieces vertically or horizontally on a board 
+to establish an end result that matches a solution. This project uses python turtle only as graphic packages 
+for the application. 
+
+
+---- Design: ----
+
+I decided to use three classes: Boardlayout, Puzzleclicks, and Leaderboard.
+
+Boardlayout: I wrote this class first which is responsible for static graphics of the game such as window setup, 
+layout of three areas (play area, leaderboard area, and control area), as well as splash screen and pop up images 
+when player loses, wins, or quits the game.
+
+Puzzleclicks: In this class, I managed the puzzle file reader, puzzle creator, thumbnail creator, and move counter. 
+The puzzle_data method take in the puzzle file and build dictionary with data extracted from the file. When a new file 
+is loaded, update the puzzle and the thumbnail to match user's selection. Record player's number of moves. I also used 
+shuffled list to keep track of the piece order and swap the positions of the list elements when swapping a puzzle piece.
+
+Leaderboard: I create four methods to save/retrieve and present the contents in the leaderboard.
+
+Following the sample work plan, I finally wrote the code to log errors to 5001_puzzle.err, clean up code again and 
+continue to test until the program works all fine.
+
+
+---- Source Files: ----
+
+Boardlayout.py
+Puzzleclicks.py
+Leaderboard.py
+puzzle_game.py
